@@ -12,3 +12,8 @@ person[1] = {name: 'Danny'} // Error - person array can't contain objects
 let person: (string | number | boolean)[] = ['Danny', 1, true];
 person[0] = 100;
 person[1] = {name: 'Danny'} // Error - person array can't contain objects
+
+// Functions in TypeScript
+function add(a: number, b: number): number {
+  return a + b;
+}
