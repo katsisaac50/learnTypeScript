@@ -79,3 +79,20 @@ let person2: Person = {
   location: 'Germany',
   isProgrammer: false,
 };
+
+
+// signiture of a function
+interface Speech {
+  sayHi(name: string): string;
+  sayBye: (name: string) => string;
+}
+
+let sayStuff: Speech = {
+  sayHi: function (name: string) {
+    return `Hi ${name}`;
+  },
+  sayBye: (name: string) => `Bye ${name}`,
+};
+
+console.log(sayStuff.sayHi('Heisenberg')); // Hi Heisenberg
+console.log(sayStuff.sayBye('Heisenberg')); // Bye Heisenberg
