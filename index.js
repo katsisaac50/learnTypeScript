@@ -28,3 +28,27 @@ class Person {
 }
 const person1 = new Person('Danny', false, 'dan@e.com', 1);
 console.log(person1.name); // Danny
+// objects in TypeScript
+// Declare a variable called person with a specific object type annotation
+let person;
+// Assign person to an object with all the necessary properties and value types
+person = {
+    name: 'Danny',
+    location: 'UK',
+    isProgrammer: true,
+};
+person.isProgrammer = 'Yes'; // ERROR: should be a boolean
+person = {
+    name: 'John',
+    location: 'US',
+};
+let person1 = {
+    name: 'Danny',
+    location: 'UK',
+    isProgrammer: true,
+};
+let person2 = {
+    name: 'Sarah',
+    location: 'Germany',
+    isProgrammer: false,
+};
