@@ -87,3 +87,11 @@ const add = (a, b, c) => {
 console.log(add(5, 4, 'I could pass a number, string, or nothing here!'));
 // I could pass a number, string, or nothing here!
 // 9
+// Function that return void
+// Declare the varible sayHello, and give it a function signature that takes a string and returns nothing.
+let sayHello;
+// Define the function, satisfying its signature
+sayHello = (name) => {
+    console.log('Hello ' + name);
+};
+sayHello('Danny'); // Hello Danny
