@@ -79,3 +79,11 @@ const circle = (diam) => {
 const circle = (diam) => {
     return 'The circumference is ' + Math.PI * diam;
 };
+// passing optional parameters in a function in TypeScript
+const add = (a, b, c) => {
+    console.log(c);
+    return a + b;
+};
+console.log(add(5, 4, 'I could pass a number, string, or nothing here!'));
+// I could pass a number, string, or nothing here!
+// 9
