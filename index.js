@@ -95,3 +95,8 @@ sayHello = (name) => {
     console.log('Hello ' + name);
 };
 sayHello('Danny'); // Hello Danny
+function addNum(a, b) {
+    console.log('Drinking');
+    return (a + b).toString();
+}
+addNum(1, 2); // 3

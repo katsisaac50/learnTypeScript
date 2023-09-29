@@ -147,3 +147,23 @@ sayHello = (name) => {
 };
 
 sayHello('Danny'); // Hello Danny
+
+function addNum(a: number, b: number): string {
+  console.log('Drinking');
+  return (a+b).toString();
+}
+addNum(1, 2); // 3
+
+// classes in TypeScript
+class Person{
+  name: string;
+  isCool: boolean;
+  email: string;
+  pets: number;
+  constructor(
+    readonly name: string,
+    private isCool: boolean,
+    protected email: string,
+    public pets: number
+  ) {}
+}
