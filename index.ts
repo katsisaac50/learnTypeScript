@@ -161,9 +161,36 @@ class Person{
   email: string;
   pets: number;
   constructor(
+    a: string,
+    b: boolean,
+    c: string,
+    d: number
+  ) {
+    this.name = a;
+    this.isCool = b;
+    this.email = c;
+    this.pets = d;
+  }
+  sayHi(){
+    console.log(`Hi ${this.name}`);
+  }
+}
+person1 = new Person( 'Danny', false, 'dan@e.com', 1 );
+console.log(person1.email); // dan@e.com
+
+// writing in class in conscise
+class Person {
+  constructor(
     readonly name: string,
     private isCool: boolean,
     protected email: string,
     public pets: number
   ) {}
+
+  sayMyName() {
+    console.log(`Your not Heisenberg, you're ${this.name}`);
+  }
 }
+
+const person1 = new Person('Danny', false, 'dan@e.com', 1);
+console.log(person1.name); // Danny
