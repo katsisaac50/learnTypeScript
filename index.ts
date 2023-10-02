@@ -194,3 +194,16 @@ class Person {
 
 const person1 = new Person('Danny', false, 'dan@e.com', 1);
 console.log(person1.name); // Danny
+
+// using interface in typescript
+interface Person {
+  name: string
+  age: number
+  speak(sentence: string): void
+}
+
+const person1: Person = {
+  name: "John",
+  age: 48,
+  speak: sentence => console.log(sentence),
+}
