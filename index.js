@@ -143,6 +143,7 @@ person1.speak("Hello");
 interface Point {
     x: number;
     y: number;
+    z: Number;
   }
    
   function logPoint(p: Point) {
